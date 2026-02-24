@@ -1,0 +1,41 @@
+[gd_scene load_steps=11 format=3 uid="uid://dxc45r1d1xjsr"]
+
+[ext_resource type="PackedScene" uid="uid://bj058pnnhhf6w" path="res://paralax.tscn" id="1_0hol4"]
+[ext_resource type="Script" uid="uid://c5xx6tf8e2t6k" path="res://spike.gd" id="1_d21ai"]
+[ext_resource type="PackedScene" uid="uid://dwamtmu7gpeds" path="res://player.tscn" id="2_q6r6c"]
+[ext_resource type="PackedScene" uid="uid://dh7f2l6s2dm5r" path="res://meu_mapa.tscn" id="3_kdubu"]
+[ext_resource type="PackedScene" uid="uid://b0sdev3cn6304" path="res://coin.tscn" id="4_d21ai"]
+[ext_resource type="PackedScene" uid="uid://b37o70jc7ybng" path="res://checkpoint.tscn" id="5_q6r6c"]
+[ext_resource type="PackedScene" uid="uid://bflqc4m1esw4v" path="res://spike.tscn" id="7_rj586"]
+[ext_resource type="PackedScene" uid="uid://dh4ss0xptuwma" path="res://new_phase.tscn" id="8_rj586"]
+[ext_resource type="PackedScene" uid="uid://yqla653s27q0" path="res://kiwi.tscn" id="9_4d7sh"]
+[ext_resource type="PackedScene" uid="uid://bbluf7ouek0rx" path="res://queda_livre.tscn" id="10_ir8iy"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_d21ai")
+
+[node name="Paralax" parent="." instance=ExtResource("1_0hol4")]
+position = Vector2(1, 109)
+
+[node name="MeuMapa" parent="." instance=ExtResource("3_kdubu")]
+position = Vector2(190, -5)
+
+[node name="Player" parent="." instance=ExtResource("2_q6r6c")]
+position = Vector2(2, 5)
+
+[node name="coin" parent="." instance=ExtResource("4_d21ai")]
+position = Vector2(204, 213)
+
+[node name="Checkpoint" parent="." instance=ExtResource("5_q6r6c")]
+position = Vector2(905, 183)
+
+[node name="Spike" parent="." instance=ExtResource("7_rj586")]
+position = Vector2(316, 213)
+
+[node name="new_phase" parent="." instance=ExtResource("8_rj586")]
+position = Vector2(2460, 417)
+
+[node name="Kiwi" parent="." instance=ExtResource("9_4d7sh")]
+position = Vector2(637, 204)
+
+[node name="QuedaLivre" parent="." instance=ExtResource("10_ir8iy")]

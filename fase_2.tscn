@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://0rwwqgakxvwl"]
+
+[ext_resource type="PackedScene" uid="uid://bj058pnnhhf6w" path="res://paralax.tscn" id="1_k083c"]
+[ext_resource type="PackedScene" uid="uid://dwamtmu7gpeds" path="res://player.tscn" id="2_xe686"]
+[ext_resource type="PackedScene" uid="uid://b6yw0of3qln8f" path="res://mapa_2.tscn" id="3_47a2j"]
+
+[node name="Fase2" type="Node2D"]
+
+[node name="Paralax" parent="." instance=ExtResource("1_k083c")]
+
+[node name="mapa2" parent="." instance=ExtResource("3_47a2j")]
+
+[node name="Player" parent="." instance=ExtResource("2_xe686")]

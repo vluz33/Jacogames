@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://bflqc4m1esw4v"]
+
+[ext_resource type="Script" uid="uid://c5xx6tf8e2t6k" path="res://spike.gd" id="1_7k7bx"]
+[ext_resource type="Texture2D" uid="uid://bo45im26fjken" path="res://Free/Traps/Spikes/Idle.png" id="1_8ryga"]
+[ext_resource type="AudioStream" uid="uid://x2ssjrkepvii" path="res://Free/sounds/hurt.wav" id="3_tggh8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7k7bx"]
+
+[node name="Spike" type="Area2D"]
+script = ExtResource("1_7k7bx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_8ryga")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_7k7bx")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_tggh8")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

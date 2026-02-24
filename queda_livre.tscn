@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbluf7ouek0rx"]
+
+[ext_resource type="Script" uid="uid://dvmp71madp2tk" path="res://queda_livre.gd" id="1_avjih"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2cna7"]
+size = Vector2(3263.5, 20)
+
+[node name="QuedaLivre" type="Area2D"]
+script = ExtResource("1_avjih")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(449.25, 1290)
+shape = SubResource("RectangleShape2D_2cna7")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(1, 314)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
