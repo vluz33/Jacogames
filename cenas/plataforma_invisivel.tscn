@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://dglp0v4rcorj2"]
 
-[ext_resource type="Script" uid="uid://ct2rv6ilcktam" path="res://plataforma_invisivel.gd" id="1_xo0kp"]
+[ext_resource type="Script" uid="uid://ct2rv6ilcktam" path="res://scripts/plataforma_invisivel.gd" id="1_xo0kp"]
 [ext_resource type="Texture2D" uid="uid://35lp1kf7vuf2" path="res://Free/Traps/Sand Mud Ice/Ice Particle.png" id="2_xo0kp"]
 [ext_resource type="Texture2D" uid="uid://bkew3gt3sqxoy" path="res://Free/Traps/Sand Mud Ice/Mud Particle.png" id="3_vn8qh"]
 [ext_resource type="Texture2D" uid="uid://cuhnptoulv8d1" path="res://Free/Traps/Sand Mud Ice/Sand Particle.png" id="4_nkgep"]

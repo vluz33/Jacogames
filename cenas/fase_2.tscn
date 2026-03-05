@@ -1,0 +1,20 @@
+[gd_scene load_steps=6 format=3 uid="uid://0rwwqgakxvwl"]
+
+[ext_resource type="PackedScene" uid="uid://cegnx5nyin5jl" path="res://cenas/fundo_2.tscn" id="1_dfqu4"]
+[ext_resource type="PackedScene" uid="uid://b6yw0of3qln8f" path="res://cenas/mapa_2.tscn" id="2_fpkrg"]
+[ext_resource type="PackedScene" uid="uid://dwamtmu7gpeds" path="res://cenas/player.tscn" id="3_jgmlh"]
+[ext_resource type="PackedScene" uid="uid://dglp0v4rcorj2" path="res://cenas/plataforma_invisivel.tscn" id="4_snhlp"]
+[ext_resource type="PackedScene" uid="uid://bbluf7ouek0rx" path="res://cenas/queda_livre.tscn" id="5_gb066"]
+
+[node name="Fase2" type="Node2D"]
+
+[node name="Fundo2" parent="." instance=ExtResource("1_dfqu4")]
+
+[node name="mapa2" parent="." instance=ExtResource("2_fpkrg")]
+
+[node name="Player" parent="." instance=ExtResource("3_jgmlh")]
+
+[node name="plataforma_invisivel" parent="." instance=ExtResource("4_snhlp")]
+position = Vector2(159, -7)
+
+[node name="QuedaLivre" parent="." instance=ExtResource("5_gb066")]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bflqc4m1esw4v"]
 
-[ext_resource type="Script" uid="uid://c5xx6tf8e2t6k" path="res://spike.gd" id="1_7k7bx"]
+[ext_resource type="Script" uid="uid://c5xx6tf8e2t6k" path="res://scripts/spike.gd" id="1_7k7bx"]
 [ext_resource type="Texture2D" uid="uid://bo45im26fjken" path="res://Free/Traps/Spikes/Idle.png" id="1_8ryga"]
 [ext_resource type="AudioStream" uid="uid://x2ssjrkepvii" path="res://Free/sounds/hurt.wav" id="3_tggh8"]
 

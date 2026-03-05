@@ -1,6 +1,6 @@
 [gd_scene load_steps=31 format=3 uid="uid://b37o70jc7ybng"]
 
-[ext_resource type="Script" uid="uid://c5jf0kcgwwmnn" path="res://checkpoint.gd" id="1_r6hke"]
+[ext_resource type="Script" uid="uid://c5jf0kcgwwmnn" path="res://scripts/checkpoint.gd" id="1_r6hke"]
 [ext_resource type="Texture2D" uid="uid://tf5m12fdwo74" path="res://Free/Items/Checkpoints/Checkpoint/Checkpoint (Flag Out) (64x64).png" id="2_tnhlw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_s20m7"]

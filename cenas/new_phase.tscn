@@ -1,6 +1,6 @@
 [gd_scene load_steps=16 format=3 uid="uid://dh4ss0xptuwma"]
 
-[ext_resource type="Script" uid="uid://cpw7r54qls47b" path="res://new_phase.gd" id="1_pnfd3"]
+[ext_resource type="Script" uid="uid://cpw7r54qls47b" path="res://scripts/new_phase.gd" id="1_pnfd3"]
 [ext_resource type="Texture2D" uid="uid://eh30occ50r2s" path="res://Free/Items/Checkpoints/Checkpoint/Checkpoint (Flag Idle)(64x64).png" id="2_bva0f"]
 [ext_resource type="AudioStream" uid="uid://biqf2y2tb4jfy" path="res://Free/Traps/Spikes/sounds/power_up.wav" id="3_a1jcs"]
 

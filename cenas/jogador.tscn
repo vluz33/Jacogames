@@ -1,6 +1,6 @@
 [gd_scene load_steps=17 format=3 uid="uid://clhgg466a4nxf"]
 
-[ext_resource type="Script" uid="uid://dlrdkbeu8ru45" path="res://jogador.gd" id="1_q2130"]
+[ext_resource type="Script" uid="uid://dlrdkbeu8ru45" path="res://scripts/jogador.gd" id="1_q2130"]
 [ext_resource type="Texture2D" uid="uid://ftyk20xt06hf" path="res://Free/Main Characters/Virtual Guy/Idle (32x32).png" id="2_4obgb"]
 [ext_resource type="AudioStream" uid="uid://dvf3v3sg1w6bh" path="res://Free/sounds/explosion.wav" id="3_j3kwt"]
 

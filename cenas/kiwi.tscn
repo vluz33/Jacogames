@@ -1,6 +1,6 @@
 [gd_scene load_steps=23 format=3 uid="uid://yqla653s27q0"]
 
-[ext_resource type="Script" uid="uid://c8jh2bm3go0sl" path="res://kiwi.gd" id="1_51ixh"]
+[ext_resource type="Script" uid="uid://c8jh2bm3go0sl" path="res://scripts/kiwi.gd" id="1_51ixh"]
 [ext_resource type="Texture2D" uid="uid://dww5ae3ylghep" path="res://Free/Items/Fruits/Kiwi.png" id="2_nvcft"]
 [ext_resource type="AudioStream" uid="uid://c50v512ro71fa" path="res://Free/sounds/coin.wav" id="3_nvcft"]
 

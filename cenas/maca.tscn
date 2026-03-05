@@ -1,6 +1,6 @@
 [gd_scene load_steps=22 format=3 uid="uid://brimp0twt784f"]
 
-[ext_resource type="Script" uid="uid://318kji6p81rq" path="res://maca.gd" id="1_4jht3"]
+[ext_resource type="Script" uid="uid://318kji6p81rq" path="res://scripts/maca.gd" id="1_4jht3"]
 [ext_resource type="Texture2D" uid="uid://cpob4oc7aeh7e" path="res://Free/Items/Fruits/Apple.png" id="2_yidmq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nxu7l"]
