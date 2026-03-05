@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cegnx5nyin5jl"]
+
+[ext_resource type="Texture2D" uid="uid://bpvxabegu7a2a" path="res://Free/Background/Pink.png" id="1_8ievg"]
+
+[node name="Fundo2" type="Parallax2D"]
+repeat_size = Vector2(64, 64)
+repeat_times = 20
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(627, 315)
+texture = ExtResource("1_8ievg")

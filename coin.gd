@@ -27,5 +27,3 @@ func _on_body_entered(body: Node2D) -> void:
 		await animacao.animation_finished
 		animacao.hide()
 		queue_free()
-		
-		

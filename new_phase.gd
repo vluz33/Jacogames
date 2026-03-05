@@ -18,3 +18,4 @@ func _on_body_entered(body: Node2D) -> void:
 		ganhou.play()
 		get_tree().change_scene_to_file("res://fase_2.tscn")
 		Global.fase = Global.fase + 1
+		Global.last_checkpoint = Vector2(0, 0)

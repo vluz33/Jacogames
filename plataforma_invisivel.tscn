@@ -1,0 +1,62 @@
+[gd_scene load_steps=10 format=3 uid="uid://dglp0v4rcorj2"]
+
+[ext_resource type="Script" uid="uid://ct2rv6ilcktam" path="res://plataforma_invisivel.gd" id="1_xo0kp"]
+[ext_resource type="Texture2D" uid="uid://35lp1kf7vuf2" path="res://Free/Traps/Sand Mud Ice/Ice Particle.png" id="2_xo0kp"]
+[ext_resource type="Texture2D" uid="uid://bkew3gt3sqxoy" path="res://Free/Traps/Sand Mud Ice/Mud Particle.png" id="3_vn8qh"]
+[ext_resource type="Texture2D" uid="uid://cuhnptoulv8d1" path="res://Free/Traps/Sand Mud Ice/Sand Particle.png" id="4_nkgep"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vn8qh"]
+size = Vector2(42, 46)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fr04v"]
+atlas = ExtResource("2_xo0kp")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pmyml"]
+atlas = ExtResource("3_vn8qh")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_deoo8"]
+atlas = ExtResource("4_nkgep")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pmyml"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fr04v")
+}],
+"loop": true,
+"name": &"ice",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pmyml")
+}],
+"loop": true,
+"name": &"mud",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_deoo8")
+}],
+"loop": true,
+"name": &"sand",
+"speed": 5.0
+}]
+
+[node name="plataforma_invisivel" type="Area2D"]
+script = ExtResource("1_xo0kp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_vn8qh")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+visible = false
+sprite_frames = SubResource("SpriteFrames_pmyml")
+animation = &"sand"
+autoplay = "ice"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,7 +1,8 @@
-extends Node2D
+extends Area2D
 
-@onready var lose = $AudioStreamPlayer2D
-@onready var sprite = $Sprite2D
+
+@onready var colisao = $CollisionShape2D
+@onready var animacao = $AnimatedSprite2D
 
 
 # Called when the node enters the scene tree for the first time.
@@ -16,8 +17,8 @@ func _process(delta: float) -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == "Player":
-		lose.play()
-		Global.vida=Global.vida-1
-		if Global.vida<=0:
-			Global.vida=10
-			body.global_position = Global.last_checkpoint
+		if not animacao.visible:
+			animacao.show()
+		else:
+			colisao.set_deferred("disabled",true)
+			animacao.hide()

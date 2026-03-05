@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dxc45r1d1xjsr"]
+[gd_scene load_steps=12 format=3 uid="uid://dxc45r1d1xjsr"]
 
 [ext_resource type="PackedScene" uid="uid://bj058pnnhhf6w" path="res://paralax.tscn" id="1_0hol4"]
 [ext_resource type="Script" uid="uid://c5xx6tf8e2t6k" path="res://spike.gd" id="1_d21ai"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://dh4ss0xptuwma" path="res://new_phase.tscn" id="8_rj586"]
 [ext_resource type="PackedScene" uid="uid://yqla653s27q0" path="res://kiwi.tscn" id="9_4d7sh"]
 [ext_resource type="PackedScene" uid="uid://bbluf7ouek0rx" path="res://queda_livre.tscn" id="10_ir8iy"]
+[ext_resource type="PackedScene" uid="uid://brimp0twt784f" path="res://maca.tscn" id="11_hqns4"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_d21ai")
@@ -24,18 +25,21 @@ position = Vector2(190, -5)
 position = Vector2(2, 5)
 
 [node name="coin" parent="." instance=ExtResource("4_d21ai")]
-position = Vector2(204, 213)
+position = Vector2(240, 226)
 
 [node name="Checkpoint" parent="." instance=ExtResource("5_q6r6c")]
-position = Vector2(905, 183)
+position = Vector2(1010, 233)
 
 [node name="Spike" parent="." instance=ExtResource("7_rj586")]
-position = Vector2(316, 213)
+position = Vector2(1536, 418)
 
 [node name="new_phase" parent="." instance=ExtResource("8_rj586")]
 position = Vector2(2460, 417)
 
 [node name="Kiwi" parent="." instance=ExtResource("9_4d7sh")]
-position = Vector2(637, 204)
+position = Vector2(1846, 414)
 
 [node name="QuedaLivre" parent="." instance=ExtResource("10_ir8iy")]
+
+[node name="maca" parent="." instance=ExtResource("11_hqns4")]
+position = Vector2(1279, 23)

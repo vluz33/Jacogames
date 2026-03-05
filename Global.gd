@@ -1,8 +1,9 @@
 extends Node
 
 var walk = false
+var vida = 10
 var last_checkpoint = Vector2(0, 0)
-var vida = 100
+var name_player = "Victor"
 var item = 0
 var fase = 1
 var jump = false
